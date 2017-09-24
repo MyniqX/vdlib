@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">vdlib</string>
+	<string name="vdlib_clear">Temizle</string>
+	<string name="vdlib_console_title">vdPrime Konsol:</string>
+
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

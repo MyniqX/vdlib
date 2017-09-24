@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+
+dependencies {
+    implementation  fileTree(include: ['*.jar'], dir: 'libs')
+    implementation  'com.android.support:design:26.0.2'
+    implementation  'com.android.support:appcompat-v7:26.0.2'
+}

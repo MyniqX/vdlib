@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="350dp"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/vdlib_notification_title"
+		android:layout_width="match_parent"
+		android:layout_height="120dp"
+		android:layout_alignParentTop="true"
+		android:background="@color/lightgrey"
+		android:gravity="left|bottom"
+		android:padding="24dp"
+		android:text="Başlık"
+		android:textSize="25sp"/>
+
+	<TextView
+		android:id="@+id/vdlib_notification_subtitle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="@color/lightblue"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="5dp"/>
+
+	<FrameLayout
+		android:id="@+id/vdlib_notification_container"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/vdlib_notification_subtitle"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/vdlib_notification_title"
+		android:background="@color/white">
+
+		<TextView
+			android:id="@+id/vdlib_notification_default"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:autoLink="web|email"
+			android:gravity="center_vertical"
+			android:padding="2dp"
+			android:text="Notification Area"
+			android:textColor="@color/black"
+			android:textSize="16sp"/>
+
+	</FrameLayout>
+
+	<ImageButton
+		android:id="@+id/vdlib_notification_fab"
+		android:layout_width="48dp"
+		android:layout_height="48dp"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginRight="12dp"
+		android:layout_marginTop="96dp"
+		android:elevation="4dp"
+		android:background="@drawable/shape_circle"
+		app:srcCompat="@drawable/done_icon"/>
+</RelativeLayout>

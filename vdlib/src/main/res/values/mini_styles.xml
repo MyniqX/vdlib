@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="MiniYesNoStyle">
+		<attr name="yesno_message" format="string"/>
+		<attr name="yesno_timeout" format="integer"/>
+		<attr name="yesno_sep" format="boolean"/>
+	</declare-styleable>
+
+	<declare-styleable name="MiniSwitchStyle">
+		<attr name="switch_title" format="string"/>
+		<attr name="switch_positive_message" format="string"/>
+		<attr name="switch_negative_message" format="string"/>
+		<attr name="switch_value" format="boolean"/>
+		<attr name="switch_sep" format="boolean"/>
+	</declare-styleable>
+
+	<declare-styleable name="MiniButtonStyle">
+		<attr name="button_title" format="string"/>
+		<attr name="button_subtitle" format="string"/>
+		<attr name="button_sep" format="boolean"/>
+	</declare-styleable>
+
+	<dimen name="mini_yesno_button_size">32dp</dimen>
+	<string name="mini_yesno_default_message">emin misin?</string>
+	<string name="mini_switch_default_title">Mini Açma kapama</string>
+	<string name="mini_switch_default_positive">Açık</string>
+	<string name="mini_switch_default_negative">Kapalı</string>
+	<string name="mini_button_default_title">Mini Button</string>
+	<string name="mini_button_default_subtitle">alt metin</string>
+</resources>
